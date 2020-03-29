@@ -1,10 +1,23 @@
 # SENTSOR Core Board 328p
 ## Introduction
-<img src="#" width="600">  
+<img src="https://github.com/adamalfath/sentsor-core-328p/blob/master/media/core328p-img0.jpg" width="600">  
 
+Seberapa sering kalian menghadapi kebutuhan untuk pengambilan data/datalogging? monitoring peralatan industri? daya, vibrasi, environment, dll. Atau data praktikum/skripsi? pengukuran temperatur, arus, tegangan, massa, dll. Terlepas dari apa kebutuhannya, proses datalogging selalu memiliki 3 komponen utama yaitu waktu (timestamp), media penyimpanan/pengolahan, dan data yang diambil itu sendiri (biasanya dari sensor).
 
 ## Features
+<img src="https://github.com/adamalfath/sentsor-core-328p/blob/master/media/core328p-pinoutposter.jpg" width="600">  
 
+- **Compact & powerful**, 58.42x40.64mm (2300x1600mil) dengan MCU+RTC+uSD onboard.
+- **2x18P pinout layout, pitch 2.54mm/100mil**, dengan susunan 1 sisi untuk peripheral (power, programming, communication) dan 1 sisi untuk GPIO, mempermudah manajemen jalur/kabel yang akan digunakan.
+- **Castellated holes & pin header**, pilihan koneksi untuk mempermudah pengaplikasian board SENTSOR Core pada setiap kebutuhan.
+- **ATmega328P-AU** @16MHz support bootloader Arduino (default Nano 3.x).
+- **FT232RL Serial UART to USB**, koneksi data ke USB tanpa install driver tambahan.
+- **DS3231 Precison RTC**, terhubung via I2C pada alamat 0x68.
+- **MicroSD socket**, terhubung via SPI dengan slave select (SS) pada pin D10.
+- **Built-in LED**, terhubung pada pin D2, konfigurasi active-high.
+- **22 pin GPIO** @5V level: 1xUART, 1xSPI, 1xI2C, 10bit ADC (A6-A7 hanya dapat digunakan sebagai input). Silahkan lihat gambar diatas untuk lebih lanjut.
+- **AMS1117 5V regulator**, tegangan input (VIN) 6.5-12V.  
+  Penggunaan arus +5V via USB <= 500mA, arus +5V via input VIN <= 1A, arus +3V3 <= 50mA. Silahkan lihat skematik untuk mempelajari lebih lanjut.
 
 ## Bill of Materials
 |Designator|Qty|Name/Value|Footprint|
@@ -37,9 +50,10 @@ SENTSOR Core Board 328p merupakan open source hardware, silahkan dimanfaatkan se
 Link: https://easyeda.com/sentsor-project/sentsor-core-328p
 
 ## Gallery
-<img src="#" width="400"> <img src="#" width="400">  
-<img src="#" width="400"> <img src="#" width="400">  
-<img src="#" width="400"> <img src="#" width="400">
+<img src="https://github.com/adamalfath/sentsor-core-328p/blob/master/media/core328p-img1.jpg" width="400"> <img src="https://github.com/adamalfath/sentsor-core-328p/blob/master/media/core328p-img2.jpg" width="400">  
+<img src="https://github.com/adamalfath/sentsor-core-328p/blob/master/media/core328p-img3.jpg" width="400"> <img src="https://github.com/adamalfath/sentsor-core-328p/blob/master/media/core328p-img4.jpg" width="400">  
+<img src="https://github.com/adamalfath/sentsor-core-328p/blob/master/media/core328p-img5.jpg" width="400"> <img src="https://github.com/adamalfath/sentsor-core-328p/blob/master/media/core328p-img6.jpg" width="400">  
+<img src="https://github.com/adamalfath/sentsor-core-328p/blob/master/media/core328p-img7.jpg" width="400"> <img src="https://github.com/adamalfath/sentsor-core-328p/blob/master/media/core328p-img8.jpg" width="400">
 
 ## Information
 SENTSOR  

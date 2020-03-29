@@ -30,7 +30,7 @@
 |B1|1|CR1220|BAT_CR1220_SMD|
 
 ## Design 
-<img src="#" width="600">  
+<img src="https://github.com/adamalfath/sentsor-core-328p/blob/master/media/core328p-pcb-ss.png" width="600">  
 
 SENTSOR Core Board 328p merupakan open source hardware, silahkan dimanfaatkan secara bijaksana.  
 

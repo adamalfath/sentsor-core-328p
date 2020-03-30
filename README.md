@@ -1,4 +1,4 @@
-# SENTSOR Core Board 328p
+# SENTSOR Core Board 328P
 ## Introduction
 <img src="https://github.com/adamalfath/sentsor-core-328p/blob/master/media/core328p-img0.jpg" width="600">  
 
@@ -45,7 +45,7 @@ Seberapa sering kalian menghadapi kebutuhan untuk pengambilan data/datalogging? 
 ## Design 
 <img src="https://github.com/adamalfath/sentsor-core-328p/blob/master/media/core328p-pcb-ss.png" width="600">  
 
-SENTSOR Core Board 328p merupakan open source hardware, silahkan dimanfaatkan secara bijaksana.  
+SENTSOR Core Board 328P merupakan open source hardware, silahkan dimanfaatkan secara bijaksana.  
 
 Link: https://easyeda.com/sentsor-project/sentsor-core-328p
 
@@ -62,4 +62,4 @@ Contact: adam.alfath23@gmail.com
 Web: [sentsor.net](http://www.sentsor.net)  
 Repo: [SENTSOR Main Repo](http://github.com/adamalfath/sentsor)
 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">SENTSOR Core Board 328p</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">SENTSOR Core Board 328P</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.

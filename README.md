@@ -2,7 +2,9 @@
 ## Introduction
 <img src="https://github.com/adamalfath/sentsor-core-328p/blob/master/media/core328p-img0.jpg" width="600">  
 
-Seberapa sering kalian menghadapi kebutuhan untuk pengambilan data/datalogging? monitoring peralatan industri? daya, vibrasi, environment, dll. Atau data praktikum/skripsi? pengukuran temperatur, arus, tegangan, massa, dll. Terlepas dari apa kebutuhannya, proses datalogging selalu memiliki 3 komponen utama yaitu waktu (timestamp), media penyimpanan/pengolahan, dan data yang diambil itu sendiri (biasanya dari sensor).
+Seberapa sering kalian menghadapi kebutuhan untuk pengambilan data/datalogging? monitoring peralatan industri? daya, vibrasi, environment, dll. Atau data praktikum/skripsi? pengukuran temperatur, arus, tegangan, massa, dll. Terlepas dari apa kebutuhannya, proses datalogging selalu memiliki 3 komponen utama yaitu waktu (timestamp), media penyimpanan/pengolahan, dan data yang diambil itu sendiri (biasanya dari sensor). Lalu sudah berapa kali kalian mengambil 3 board berbeda untuk kebutuhan ini? Mikrokontroller, modul RTC dan modul memory card adapter, 3 komponen yang selalu hadir dalam project datalogging. Tentu sangat membantu bukan jika ada sebuah development board yang memiliki ke tiga fungsi tersebut?
+
+SENTSOR Core Board 328P hadir sebagai development board yang dioptimasi untuk keperluan datalogging. Dalam board mungil berukuran sekitar 6x4cm, SENSOR Core Board 328P mengemas MCU ATmega328P, RTC presisi DS3231 dengan akurasi ±3.5ppm, adapter memory card untuk ukuran MicroSD, serta chip UART-to-USB FT232RL untuk menghandle keperluan koneksi via USB tanpa lagi mengkhawatirkan instalasi driver tambahan. Pinout dari board ini disusun sedemikian rupa untuk memudahkan manajemen koneksi untuk sensor atau GPIO yang akan digunakan. Koneksi IO dapat dilakukan menggunakan header 2.45mm (male/female) ataupun castellated holes untuk mounting board-to-board, memudahkan untuk meng-embed SENTSOR Core Board 328P ini pada setiap project datalogging kalian.
 
 ## Features
 <img src="https://github.com/adamalfath/sentsor-core-328p/blob/master/media/core328p-pinoutposter.jpg" width="600">  
@@ -12,12 +14,21 @@ Seberapa sering kalian menghadapi kebutuhan untuk pengambilan data/datalogging? 
 - **Castellated holes & pin header**, pilihan koneksi untuk mempermudah pengaplikasian board SENTSOR Core pada setiap kebutuhan.
 - **ATmega328P-AU** @16MHz support bootloader Arduino (default Nano 3.x).
 - **FT232RL Serial UART to USB**, koneksi data ke USB tanpa install driver tambahan.
-- **DS3231 Precison RTC**, terhubung via I2C pada alamat 0x68.
+- **DS3231 Extremely Accurate RTC**, terhubung via I2C pada alamat 0x68.
 - **MicroSD socket**, terhubung via SPI dengan slave select (SS) pada pin D10.
 - **Built-in LED**, terhubung pada pin D2, konfigurasi active-high.
 - **22 pin GPIO** @5V level: 1xUART, 1xSPI, 1xI2C, 10bit ADC (A6-A7 hanya dapat digunakan sebagai input). Silahkan lihat gambar diatas untuk lebih lanjut.
 - **AMS1117 5V regulator**, tegangan input (VIN) 6.5-12V.  
   Penggunaan arus +5V via USB <= 500mA, arus +5V via input VIN <= 1A, arus +3V3 <= 50mA. Silahkan lihat skematik untuk mempelajari lebih lanjut.
+
+## How to Use
+Secara default SENTSOR Core Board 328P memiliki bootloader Arduino Nano 3.0 (update dari versi Nano old bootloader). Pilih board tersebut pada opsi board di Arduino IDE atau sejenis, pilih port yang sesuai, dan Core Board 328P sudah siap digunakan.
+
+File example yang disediakan memiliki library dependency terkait RTC dan akses memory card, yaitu:
+- RTCLib https://github.com/adafruit/RTClib
+- SDFat https://github.com/greiman/SdFat  
+
+Silahkan install library tersebut jika dibutuhkan dalam program yang akan kalian buat.
 
 ## Bill of Materials
 |Designator|Qty|Name/Value|Footprint|
@@ -54,6 +65,11 @@ Link: https://easyeda.com/sentsor-project/sentsor-core-328p
 <img src="https://github.com/adamalfath/sentsor-core-328p/blob/master/media/core328p-img3.jpg" width="400"> <img src="https://github.com/adamalfath/sentsor-core-328p/blob/master/media/core328p-img4.jpg" width="400">  
 <img src="https://github.com/adamalfath/sentsor-core-328p/blob/master/media/core328p-img5.jpg" width="400"> <img src="https://github.com/adamalfath/sentsor-core-328p/blob/master/media/core328p-img6.jpg" width="400">  
 <img src="https://github.com/adamalfath/sentsor-core-328p/blob/master/media/core328p-img7.jpg" width="400"> <img src="https://github.com/adamalfath/sentsor-core-328p/blob/master/media/core328p-img8.jpg" width="400">
+
+## Support OSH & SENTSOR!
+Bila kalian tertarik dengan produk-produk SENTSOR, kalian bisa cek marketplace di link berikut:  
+https://www.tokopedia.com/gerai-sagalarupa/etalase/sentsor-product  
+Support kalian akan sangat membantu untuk pengembangan open-source hardware dari SENTSOR selanjutnya.
 
 ## Information
 SENTSOR  

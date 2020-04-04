@@ -2,7 +2,7 @@
 ## Introduction
 <img src="https://github.com/adamalfath/sentsor-core-328p/blob/master/media/core328p-img0.jpg" width="600">  
 
-Seberapa sering kalian menghadapi kebutuhan untuk pengambilan data/datalogging? monitoring peralatan industri? daya, vibrasi, environment, dll. Atau data praktikum/skripsi? pengukuran temperatur, arus, tegangan, massa, dll. Terlepas dari apa kebutuhannya, proses datalogging selalu memiliki 3 komponen utama yaitu waktu (timestamp), media penyimpanan/pengolahan, dan data yang diambil itu sendiri (biasanya dari sensor). Lalu sudah berapa kali kalian mengambil 3 board berbeda untuk kebutuhan ini? Mikrokontroller, modul RTC dan modul memory card adapter, 3 komponen yang selalu hadir dalam project datalogging. Tentu sangat membantu bukan jika ada sebuah development board yang memiliki ke tiga fungsi tersebut?
+Seberapa sering kalian menghadapi kebutuhan untuk pengambilan data/datalogging? monitoring peralatan industri? daya, vibrasi, environment, dll. Atau data praktikum/skripsi? pengukuran temperatur, arus, tegangan, massa, dll. Terlepas dari apa kebutuhannya, proses datalogging selalu memiliki 3 komponen utama yaitu waktu (timestamp), media penyimpanan/pengolahan, dan data yang diambil itu sendiri (biasanya dari sensor atau instrumen pengukuran). Lalu sudah berapa kali kalian mengambil 3 board berbeda untuk kebutuhan ini? Mikrokontroller, modul RTC dan modul memory card adapter, 3 komponen yang selalu hadir dalam project datalogging. Tentu sangat membantu bukan jika ada sebuah development board yang memiliki ke tiga fungsi tersebut?
 
 SENTSOR Core Board 328P hadir sebagai development board yang dioptimasi untuk keperluan datalogging. Dalam board mungil berukuran sekitar 6x4cm, SENSOR Core Board 328P mengemas MCU ATmega328P, RTC presisi DS3231 dengan akurasi ±3.5ppm, adapter memory card untuk ukuran MicroSD, serta chip UART-to-USB FT232RL untuk menghandle keperluan koneksi via USB tanpa lagi mengkhawatirkan kompabilitas driver. Pinout dari board ini disusun sedemikian rupa untuk memudahkan manajemen koneksi untuk sensor atau GPIO yang akan digunakan. Koneksi IO dapat dilakukan menggunakan header 2.45mm (male/female) ataupun castellated holes untuk mounting board-to-board, memudahkan untuk meng-embed SENTSOR Core Board 328P ini pada setiap project datalogging kalian.
 
@@ -10,7 +10,7 @@ SENTSOR Core Board 328P hadir sebagai development board yang dioptimasi untuk ke
 <img src="https://github.com/adamalfath/sentsor-core-328p/blob/master/media/core328p-pinoutposter.jpg" width="600">  
 
 - **Compact & powerful**, 58.42x40.64mm (2300x1600mil) dengan MCU+RTC+uSD onboard.
-- **2x18P pinout layout, pitch 2.54mm/100mil**, dengan susunan 1 sisi untuk peripheral (power, programming, communication) dan 1 sisi untuk GPIO, mempermudah manajemen jalur/kabel yang akan digunakan.
+- **2x18P pinout layout, pitch 2.54mm (100mil)**, dengan susunan 1 sisi untuk peripheral (power, programming, communication) dan 1 sisi untuk GPIO, mempermudah manajemen jalur/kabel yang akan digunakan.
 - **Castellated holes & pin header**, pilihan koneksi untuk mempermudah pengaplikasian board SENTSOR Core pada setiap kebutuhan.
 - **ATmega328P-AU** @16MHz support bootloader Arduino (default Nano 3.x).
 - **FT232RL Serial UART to USB**, koneksi data ke USB tanpa install driver tambahan.

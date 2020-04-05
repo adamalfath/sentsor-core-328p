@@ -26,7 +26,7 @@ Secara default SENTSOR Core Board 328P memiliki bootloader Arduino Nano 3.0 (upd
 
 File example yang disediakan memiliki library dependency terkait RTC dan akses memory card, yaitu:
 - RTCLib https://github.com/adafruit/RTClib
-- SDFat https://github.com/greiman/SdFat  
+- SdFat https://github.com/greiman/SdFat  
 
 Silahkan install library tersebut jika dibutuhkan dalam program yang akan kalian buat.
 

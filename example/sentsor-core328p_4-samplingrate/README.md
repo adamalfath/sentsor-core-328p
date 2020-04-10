@@ -1,0 +1,1 @@
+ Description: Control sampling rate using simple millis timer per given interval. Usually sampling rate unit is Hertz/Hz/SPS (sampling per second) but now we're gonna uses interval as sampling rate control.

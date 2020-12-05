@@ -33,7 +33,7 @@
 float voltage[6];
 String data;
 
-SdFile file;
+File file;
 SdFat sd;
 RTC_DS3231 rtc;
 
